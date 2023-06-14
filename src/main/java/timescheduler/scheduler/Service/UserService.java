@@ -3,10 +3,12 @@ package timescheduler.scheduler.Service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import timescheduler.scheduler.DTO.UserDto;
 import timescheduler.scheduler.Repository.TimeSetRepo;
 
+@Service
 public class UserService {
      @Autowired
     private TimeSetRepo repository; 
