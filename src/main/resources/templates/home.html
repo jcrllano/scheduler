@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Appointment Scheduler</title>
+<meta http-equiv="refresh" content="1000">
+</head>
+<body>
+    <form action="#" th:object="${list2}" method="get">
+    <div class="container">
+        </br></br>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <h3>Schedule Appointment</h3>
+            </div>
+            <div class="col-4"></div>
+        </div> <!--1st row class--> 
+        </br></br>
+        <div class="row" >
+            <div class="col-2"></div>
+            <div class="col-2" id="weekday"></div>
+            <div class="col-2" id="weekday2"></div>
+            <div class="col-2" id="weekday3"></div>
+        </div> <!--2nd row class-->
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2" id="dayoftheWeek"></div>
+            <div class="col-2" id="dayoftheWeek2"></div>
+            <div class="col-2" id="dayoftheWeek3"></div>
+        </div>
+        </br></br>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-1" >
+                <div class="row" id = "weekday4">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <p class="form-control" th:field="*{email}">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1" >
+                <div class="row" id = "weekday5">
+
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1" >
+                <div class="row" id = "weekday6">
+
+                </div>
+            </div>
+        </div>
+    </div> <!--container div class-->
+</form>
+</body>
+</html>

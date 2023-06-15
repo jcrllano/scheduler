@@ -21,7 +21,7 @@ public class AppController {
     @RequestMapping("/home")
     public String index(Model model) {
         var list = service.getAllUserInfo();
-        model.addAttribute("list", list);
+        model.addAttribute("list", list); 
         return "home";
     }
 }
