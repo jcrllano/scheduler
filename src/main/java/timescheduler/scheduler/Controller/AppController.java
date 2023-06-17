@@ -8,26 +8,26 @@ import org.springframework.web.servlet.ModelAndView;
 
 import timescheduler.scheduler.DTO.UserDto;
 import timescheduler.scheduler.Repository.TimeSetRepo;
+import timescheduler.scheduler.Service.TimeInventoryService;
 import timescheduler.scheduler.Service.UserService;
 
 @Controller
 public class AppController {
 
     @Autowired 
-    private UserService service;
+    private UserService userServiceservice;
+
+    @Autowired
+    private TimeInventoryService timeInventoryService;
 
     @Autowired
         TimeSetRepo repo;
     
       
-    @RequestMapping("/home")
+    @RequestMapping("/")
     public String index(Model model) {
-        var UserList = service.getAllUserInfo();
-        System.out.println("this is the list from the rep" + UserList);
-        System.out.println();
-        System.out.println();
-        System.out.println("this is the email " + service.get(1).getEmail());
-        model.addAttribute("UserList ", UserList); 
+        var timeList = timeInventoryService.getAllTimeInfo();
+        model.addAttribute("timeList", timeList); 
         return "homeUser";
     }
 }
