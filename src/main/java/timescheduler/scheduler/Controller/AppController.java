@@ -26,8 +26,12 @@ public class AppController {
     @Autowired
         TimeSetRepo repo;
     
+    @RequestMapping("/home") 
+    public String home(){
+        return "MainHome";
+    }
       
-    @RequestMapping("/")
+    @RequestMapping("/homeuser")
     public String index(Model model) {
         var timeList = timeInventoryService.getAllTimeInfo();
         model.addAttribute("timeList", timeList); 
