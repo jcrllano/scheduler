@@ -84,7 +84,7 @@
         const dateMonth = new Date().getMonth();
         if (dayofWeek == 6 || dayofWeek == 0) { 
             document.getElementById("weekday").innerHTML = dayName[1];
-            document.getElementById("weekday2").innerHTML = dayName[2];
+            document.getElementById("weekday2").innerHTML = dayName[2]; 
             document.getElementById("weekday3").innerHTML = dayName[3];
 
             document.getElementById("weekday4").innerHTML = dayName[1];
@@ -128,15 +128,12 @@
             (days[1] == weekVal && weekVal == weekVal2)) {
                 if (days[1] == weekVal && weekVal == weekVal2) {
                     var mondayDV = document.getElementById("weekday4");
-                alert("hello world from weekday4");
             }
             if (days[1] == weekVal3 && weekVal3 == weekVal4) {
                 var mondayDV = document.getElementById("weekday5");
-                alert("hello world from weekday5");
             }
             if (days[1] == weekVal5 && weekVal5 == weekVal6) {
                 var mondayDV = document.getElementById("weekday6");
-                alert("hello world from weekday6 " + weekVal5 +" "+ weekVal5 +" "+ weekVal6);
             }
             // creating button element 
             for (m = 0; m < times.length; m++) {
@@ -225,15 +222,12 @@
             (days[2] == weekVal && weekVal == weekVal2)) {
             if (days[2] == weekVal && weekVal == weekVal2) {
                 var thursdayDV = document.getElementById("weekday4");
-                alert("hello world from weekday4");
             }
             if (days[2] == weekVal3 && weekVal3 == weekVal4) {
                 var thursdayDV = document.getElementById("weekday5");
-                alert("hello world from weekday5");
             }
             if (days[2] == weekVal5 && weekVal5 == weekVal6) {
                 var thursdayDV = document.getElementById("weekday6");
-                alert("hello world from weekday6");
             }
             // creating button element
             for (i = 0; i < times2.length; i++) {
@@ -289,7 +283,7 @@
             <div class="col-2"></div>
             <div class="col-2" id="weekday"></div>
             <div class="col-2" id="weekday2"></div>
-            <div class="col-2" id="weekday3"></div>
+            <div class="col-2" id="weekday3"></div> 
         </div> <!--2nd row class-->
         <div class="row">
             <div class="col-2"></div>
